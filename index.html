@@ -1,6 +1,15 @@
 <!doctype html>
 <html>
+  <head>
+    <script>
+      function myfunction(){
+        document.getElementById("ex1").innerHTML="Example 1";
+      }
+    </script>
+  </head>
   <body>
+    <p id="ex1">Example</p>
+    <button onclick="myfunction()">Try this</button>
     <h1>What can JS do?</h1>
     <p id="demo"> js cannot change </p>
     <button type="button" onclick="document.getElementById('demo').innerHTML='js can change'"> Click </button>
